@@ -1,11 +1,7 @@
-input.onButtonPressed(Button.A, function () {
-    counter += 1
+let current_variable = 0
+basic.forever(function () {
+    current_variable = input.temperature()
+    basic.showNumber(input.temperature())
+    basic.pause(1000)
+    basic.clearScreen()
 })
-input.onButtonPressed(Button.AB, function () {
-    basic.showNumber(counter)
-})
-input.onButtonPressed(Button.B, function () {
-    counter += -1
-})
-let counter = 0
-counter = 0
